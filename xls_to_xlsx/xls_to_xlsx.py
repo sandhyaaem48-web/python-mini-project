@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-from win32com.client import Dispatch
+import Dispatch
 
 
 def convert_xls_to_xlsx(file_path: str, file_format: int = 51):

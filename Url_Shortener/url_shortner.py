@@ -9,6 +9,8 @@ headers = {
 }
 
 data = {"long_url": UI}
+d = data=json.dumps(data)
+print(f"\nYour data: {d}")
 for i in range(3): 
     result = requests.post("https://api-ssl.bitly.com/v4/shorten", headers=headers, data=json.dumps(data))
     if result.status_code == 200:
